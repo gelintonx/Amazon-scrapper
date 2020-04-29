@@ -16,14 +16,14 @@ def send_email():
     server.starttls()
     server.ehlo()
 
-    server.login('smartgelix@gmail.com','wedmlnmwyhyoenpq')
+    server.login('','')
     body = 'Visita el siguiente link de Amazon: https://www.amazon.es/gp/product/B00CUJQ7UG/ref=ox_sc_act_title_1?smid=A1AT7YVPFBWXBL&psc=1 '
     asunto = "El precio a llegado a lo deseado!!"
     message = f"Subject:{asunto}\n\n {body}"
 
     server.sendmail(
-            'smartgelix@gmail.com',
-            'peju510@gmail.com',
+            '',
+            '',
             message
     )
 
